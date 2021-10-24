@@ -1,6 +1,9 @@
 h1 {
-    color: cornflowerblue;
+    color:saddlebrown;
     font-family: monospaces;
+    background-color:rgba(230, 240,155, 0.4) ;
+    text-align: center;
+    text-shadow: 1px 2px 2px snow;
 }
 p {
     color:rgb(153, 114, 114);
