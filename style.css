@@ -1,8 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
 h1 {
     color:saddlebrown;
     font-family: monospaces;
     background-color:rgba(230, 240,155, 0.4) ;
-    text-align: center;
     text-shadow: 1px 2px 2px snow;
 }
 p {
@@ -22,11 +27,6 @@ h2 {
     border-width: 50px;
     border-radius: 20px;
     border-style:groove;
-}
-body{
-    background-color: lemonchiffon;
-    background-image: url("/img/cat.jpg");
-    background-repeat: no-repeat;
 }
 a{
     color: tomato;
@@ -56,3 +56,25 @@ a{
     top: 50%;
     transform: translate(-50%,-50%);
 }
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.left,section.right{
+    padding: 0.5rem;
+}
+
+section.right{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    flex:1 1 250px;
+}
+section.left{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    flex:1 1 250px;
+}
+
