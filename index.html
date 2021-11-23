@@ -7,17 +7,24 @@
     <base target="_blank">
     <title>409570200</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="/jquery/jquery-1.11.1.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  $("#btn1").click(function(){
-  $("img").hide();
-  });
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript"></script>
+<script>
+    $(document).ready(function(){
+    $("#btn").hide();
   $("#btn2").click(function(){
-  $("img").show();
+  $("#btn").slideToggle(200);
+  return false;
+  });
+  $("#btn1").click(function(){
+    $("#btn").hide();
+    return false;
   });
 });
-</script>
+    </script>
+
+
 </head>
 <body>
     <main>
@@ -45,17 +52,18 @@ $(document).ready(function(){
     <h1>冬季交流賽照片
     </h1>
     <br>
-    <button type="button" id="btn2">開啟隱藏影片</button>
-    <button type="button" id="btn1">關閉隱藏影片</button>
-    <img id="btn" src="./img/IMG_20211122_220541.jpg" width="478" height="850">
+    
+    <img src="./img/IMG_20211122_220541.jpg" width="478" height="850">
     <br>
-    <script>
-        $("#btn").hide(); 
-        $("#btn").show();
-        </script>
-        
-        <br>  
-    <video src="./img/LINE_MOVIE_1637489885308.mp4" width="478" height="850" controls></video>
+    <table>
+    <th>
+        <td><button type="button" id="btn2"> 開啟隱藏影片 </button></td>
+        <td>         </td>
+        <td><button type="button" id="btn1"> 關閉隱藏影片 </button> </td>
+    </th>
+    </table>
+    <br>
+    <video id="btn"src="./img/LINE_MOVIE_1637489885308.mp4" width="478" height="850" controls></video>
 </section>
 <section class="right">
     
